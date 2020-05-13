@@ -253,7 +253,7 @@ Connection ~ 9450 2550
 Wire Wire Line
 	9450 2550 9450 2650
 Wire Wire Line
-	10650 2250 10650 2550
+	10650 2250 10650 2400
 Connection ~ 10650 2550
 Wire Wire Line
 	10650 2550 10900 2550
@@ -1414,4 +1414,152 @@ Text Label 3850 3150 0    50   ~ 0
 PWM_H2
 Text Label 3650 3250 0    50   ~ 0
 PWM_L2
+$Comp
+L Connector:Screw_Terminal_01x06 J?
+U 1 1 5F1BBACF
+P 600 7350
+F 0 "J?" H 518 6917 50  0000 C CNN
+F 1 "OSTT7020150" H 680 7251 50  0001 L CNN
+F 2 "" H 600 7350 50  0001 C CNN
+F 3 "~" H 600 7350 50  0001 C CNN
+	1    600  7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5F1C245D
+P 6650 7400
+F 0 "J?" H 6730 7346 50  0000 L CNN
+F 1 "OSTT7020150" H 6730 7301 50  0001 L CNN
+F 2 "" H 6650 7400 50  0001 C CNN
+F 3 "~" H 6650 7400 50  0001 C CNN
+	1    6650 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F1C5256
+P 9500 1050
+F 0 "TP?" V 9695 1122 50  0000 C CNN
+F 1 "TestPoint" V 9604 1122 50  0000 C CNN
+F 2 "" H 9700 1050 50  0001 C CNN
+F 3 "~" H 9700 1050 50  0001 C CNN
+	1    9500 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F1DAE48
+P 10750 1050
+F 0 "TP?" V 10704 1238 50  0000 L CNN
+F 1 "TestPoint" V 10795 1238 50  0000 L CNN
+F 2 "" H 10950 1050 50  0001 C CNN
+F 3 "~" H 10950 1050 50  0001 C CNN
+	1    10750 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F1DBECE
+P 10650 2400
+F 0 "TP?" V 10604 2588 50  0000 L CNN
+F 1 "TestPoint" V 10695 2588 50  0000 L CNN
+F 2 "" H 10850 2400 50  0001 C CNN
+F 3 "~" H 10850 2400 50  0001 C CNN
+	1    10650 2400
+	0    1    1    0   
+$EndComp
+Connection ~ 10650 2400
+Wire Wire Line
+	10650 2400 10650 2550
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F1E3B56
+P 4950 2500
+F 0 "TP?" H 5008 2618 50  0000 L CNN
+F 1 "TestPoint" H 5008 2527 50  0000 L CNN
+F 2 "" H 5150 2500 50  0001 C CNN
+F 3 "~" H 5150 2500 50  0001 C CNN
+	1    4950 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 2500
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F1E6782
+P 5250 3350
+F 0 "TP?" V 5204 3538 50  0000 L CNN
+F 1 "TestPoint" V 5295 3538 50  0000 L CNN
+F 2 "" H 5450 3350 50  0001 C CNN
+F 3 "~" H 5450 3350 50  0001 C CNN
+	1    5250 3350
+	0    1    1    0   
+$EndComp
+Connection ~ 5250 3350
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F1E781A
+P 5250 1750
+F 0 "TP?" V 5204 1938 50  0000 L CNN
+F 1 "TestPoint" V 5295 1938 50  0000 L CNN
+F 2 "" H 5450 1750 50  0001 C CNN
+F 3 "~" H 5450 1750 50  0001 C CNN
+	1    5250 1750
+	0    1    1    0   
+$EndComp
+Connection ~ 5250 1750
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F1EFFDD
+P 4950 1000
+F 0 "TP?" H 5008 1118 50  0000 L CNN
+F 1 "TestPoint" H 5008 1027 50  0000 L CNN
+F 2 "" H 5150 1000 50  0001 C CNN
+F 3 "~" H 5150 1000 50  0001 C CNN
+	1    4950 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 1000
+Text Label 800  7550 0    50   ~ 0
+SP1+
+Text Label 800  7450 0    50   ~ 0
+SP1-
+Text Label 800  7350 0    50   ~ 0
+SP2+
+Text Label 800  7250 0    50   ~ 0
+SP2-
+Text Label 800  7150 0    50   ~ 0
+SP3+
+Text Label 800  7050 0    50   ~ 0
+SP3-
+Wire Wire Line
+	800  7350 800  7450
+Wire Wire Line
+	800  7150 800  7250
+$Comp
+L power:+BATT #PWR?
+U 1 1 5F24AB5C
+P 6450 7400
+F 0 "#PWR?" H 6450 7250 50  0001 C CNN
+F 1 "+BATT" H 6465 7573 50  0000 C CNN
+F 2 "" H 6450 7400 50  0001 C CNN
+F 3 "" H 6450 7400 50  0001 C CNN
+	1    6450 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-BATT #PWR?
+U 1 1 5F24D3B8
+P 6450 7500
+F 0 "#PWR?" H 6450 7350 50  0001 C CNN
+F 1 "-BATT" H 6465 7673 50  0000 C CNN
+F 2 "" H 6450 7500 50  0001 C CNN
+F 3 "" H 6450 7500 50  0001 C CNN
+	1    6450 7500
+	-1   0    0    1   
+$EndComp
+Text Notes 10150 7350 0    89   ~ 0
+Mark Ditsworth
+Text Notes 7400 7500 0    89   ~ 0
+Based on TIDA-010042
 $EndSCHEMATC
