@@ -1,0 +1,169 @@
+Source:,/home/markd/Documents/Solar/charger/charger.sch,,,,,,
+Date:,Thu 29 Oct 2020 11:03:08 PM CDT,,,,,,
+Tool:,Eeschema 5.1.5-1.fc30,,,,,,
+Generator:,/usr/share/kicad/plugins/bom_csv_grouped_by_value.py,,,,,,
+Component Count:,100,,,,,,
+,,,,,,,
+Individual Components:,,,,,,,
+,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,,Datasheet
+,,C1,1 uF,Device:C_Small,Capacitor_SMD:C_1206_3216Metric,,~
+,,C2,1 uF,Device:C_Small,Capacitor_SMD:C_1206_3216Metric,,~
+,,C3,0.1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C4,1200 uF,Device:CP,Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn,,https://www.mouser.com/ProductDetail/Nichicon/LLS2A122MELA?qs=CTiUoleKpMElkeBijh%2FajQ%3D%3D
+,,C5,1200 uF,Device:CP,Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn,,https://www.mouser.com/ProductDetail/Nichicon/LLS2A122MELA?qs=CTiUoleKpMElkeBijh%2FajQ%3D%3D
+,,C6,4.7 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C7,4.7 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C8,0.1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C9,4.7 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C10,4.7 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C11,4.7 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C12,560 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C13,560 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C14,220 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C15,220 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C16,1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C17,1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C18,0.1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C19,0.1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C20,0.1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C21,0.1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C22,0.1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C23,1000 pF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C24,1000 pF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C25,1000 uF,Device:CP,Capacitor_THT:CP_Radial_D30.0mm_P10.00mm_SnapIn,,https://www.mouser.com/ProductDetail/Cornell-Dubilier-CDE/SLPX102M100A3P3?qs=5mhQgkvyHZCZ2uZBF7Bs%2FA%3D%3D
+,,C26,10 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C27,0.1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C28,10 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C29,0.1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C30,1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C31,1 uF,Device:CP,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,,https://www.mouser.com/ProductDetail/United-Chemi-Con/ELE-101ELL1R0ME11D?qs=sGAEpiMZZMsh%252B1woXyUXj4%252Bf9ki7jDby49t5xL6J1co%3D
+,,C32,1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C33,22 nF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C34,0.1 uF,Device:C_Small,Capacitor_SMD:C_1206_3216Metric,,~
+,,C35,10 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,,~
+,,C36,10 uF,Device:CP,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,,https://www.mouser.com/ProductDetail/United-Chemi-Con/ELE-101ELL100MF11D?qs=sGAEpiMZZMsh%252B1woXyUXj4%252Bf9ki7jDbylQfEaT1r8GY%3D
+,,D1,MUHA11013G,Device:D,Diode_SMD:D_SMA,,https://www.digikey.com/en/products/detail/on-semiconductor/mura110t3g/919928
+,,D2,MUHA11013G,Device:D,Diode_SMD:D_SMA,,https://www.digikey.com/en/products/detail/on-semiconductor/mura110t3g/919928
+,,D3,B1100-13,Device:D_Schottky,Diode_SMD:D_SMA,,https://www.digikey.com/en/products/detail/diodes-incorporated/b1100q-13-f/6110468
+,,D4,B1100-13,Device:D_Schottky,Diode_SMD:D_SMA,,https://www.digikey.com/en/products/detail/diodes-incorporated/b1100q-13-f/6110468
+,,D5,D_Zener,Device:D_Zener,Diode_SMD:D_SMA,,https://www.mccsemi.com/pdf/Products/SMBJ5338B-SMBJ5388B(SMB).pdf
+,,D6,B1100B,Device:D_Schottky,Diode_SMD:D_SMB,,https://www.digikey.com/en/products/detail/diodes-incorporated/B1100B-13-F/768766
+,,FB1,74279201,Device:Ferrite_Bead_Small,Inductor_SMD:L_0805_2012Metric,,https://www.mouser.com/datasheet/2/445/74279201-1720615.pdf
+,,FB2,74279201,Device:Ferrite_Bead_Small,Inductor_SMD:L_0805_2012Metric,,https://www.mouser.com/datasheet/2/445/74279201-1720615.pdf
+,,J1,OSTT7020150,Connector:Screw_Terminal_01x06,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,,https://www.mouser.com/ProductDetail/Phoenix-Contact/1725698?qs=sGAEpiMZZMvPvGwLNS67143eXz6yLKIOycfUSa3x6pY%3D
+,,J2,Conn_01x06,Connector_Generic:Conn_01x06,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,,~
+,,J3,Conn_01x06,Connector_Generic:Conn_01x06,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,,~
+,,J4,Conn_01x03,Connector_Generic:Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,~
+,,J5,OSTT7020150,Connector:Screw_Terminal_01x02,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,https://www.mouser.com/ProductDetail/Phoenix-Contact/1725656?qs=sGAEpiMZZMvPvGwLNS67143eXz6yLKIOCsITGMn0Nro%3D
+,,L1,7443642200,Device:L,MWD_Footprints:7443642200 _Inductor,,https://www.mouser.com/datasheet/2/445/7443642200-1721886.pdf
+,,L2,7443642200,Device:L,MWD_Footprints:7443642200 _Inductor,,https://www.mouser.com/datasheet/2/445/7443642200-1721886.pdf
+,,L3,220 uH,Device:L,Inductor_SMD:L_Bourns_SRR1260,,https://www.mouser.com/ProductDetail/Bourns/SRR1260-221K?qs=sGAEpiMZZMv126LJFLh8y2g1MQW3KQGurY%2FzTCT0qxM%3D
+,,Q1,CSD18540Q5B,Transistor_FET:CSD18540Q5B,Package_TO_SOT_SMD:TDSON-8-1,,http://www.ti.com/lit/gpn/csd18540q5b
+,,Q2,CSD19531Q5A,Transistor_FET:CSD19531Q5A,Package_TO_SOT_SMD:TDSON-8-1,,http://www.ti.com/lit/gpn/csd19531q5a
+,,Q3,CSD19531Q5A,Transistor_FET:CSD19531Q5A,Package_TO_SOT_SMD:TDSON-8-1,,http://www.ti.com/lit/gpn/csd19531q5a
+,,Q4,CSD19531Q5A,Transistor_FET:CSD19531Q5A,Package_TO_SOT_SMD:TDSON-8-1,,http://www.ti.com/lit/gpn/csd19531q5a
+,,Q5,CSD19531Q5A,Transistor_FET:CSD19531Q5A,Package_TO_SOT_SMD:TDSON-8-1,,http://www.ti.com/lit/gpn/csd19531q5a
+,,Q6,CSD18540Q5B,Transistor_FET:CSD18540Q5B,Package_TO_SOT_SMD:TDSON-8-1,,http://www.ti.com/lit/gpn/csd18540q5b
+,,R1,205,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R2,1k,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R3,0.002,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R4,5.11,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R5,950k,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R6,50k,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R7,205,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R8,205,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R9,205,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R10,205,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R11,1k,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R12,2.21,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R13,2.21,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R14,4.42,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R15,2.21,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R16,2.21,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R17,4.42,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R18,1M,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R19,200k,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R20,5.6 ohm,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R21,5.6 ohm,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R22,10k,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R23,1k,Device:R_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R24,0.002,Device:R_US,Resistor_SMD:R_2512_6332Metric,,https://www.mouser.com/ProductDetail/Yageo/PU2512FKMP50R002L?qs=sGAEpiMZZMvdGkrng054t0c0U24Fa%2Fv2NfStLNxNcuIQTzdklHgYjw%3D%3D
+,,R25,430k,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R26,169k,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R27,0 ohm,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R28,0 ohm,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R29,3k,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R30,1k,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,R31,3,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,,~
+,,U1,MSP432,MSP_mwd:MSP432,MWD_Footprints:MSP432,,
+,,U2,NCP718xSN500,Regulator_Linear:NCP718xSN500,Package_TO_SOT_SMD:SOT-23-5,,https://www.onsemi.com/pub/Collateral/NCP718-D.PDF
+,,U3,UCC27517DBVR,MSP_mwd:Generic_SOT23-5,Package_TO_SOT_SMD:SOT-23-5,,http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fucc27517
+,,U4,INA240A2PW,Amplifier_Current:INA240A2PW,Package_SO:TSSOP-8_4.4x3mm_P0.65mm,,http://www.ti.com/lit/ds/symlink/ina240.pdf
+,,U5,LM5109BMA,Driver_FET:LM5109BMA,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,,http://www.ti.com/lit/ds/symlink/lm5109b.pdf
+,,U6,LM5109BMA,Driver_FET:LM5109BMA,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,,http://www.ti.com/lit/ds/symlink/lm5109b.pdf
+,,U7,INA240A2PW,Amplifier_Current:INA240A2PW,Package_SO:TSSOP-8_4.4x3mm_P0.65mm,,http://www.ti.com/lit/ds/symlink/ina240.pdf
+,,U8,LM5009MM,Regulator_Switching:LM5009MM,Package_SO:MSOP-8_3x3mm_P0.65mm,,http://www.ti.com/lit/ds/symlink/lm5009.pdf
+,,U9,AP131-33,Regulator_Linear:AP131-33,Package_TO_SOT_SMD:SOT-23-5,,http://www.diodes.com/_files/datasheets/AP131.pdf
+,,U10,LM321,Amplifier_Operational:LM321,Package_TO_SOT_SMD:SOT-23-5,,http://www.ti.com/lit/ds/symlink/lm321.pdf
+,,U11,LM321,Amplifier_Operational:LM321,Package_TO_SOT_SMD:SOT-23-5,,http://www.ti.com/lit/ds/symlink/lm321.pdf
+,,,,,,,
+,,,,,,,
+,,,,,,,
+Collated Components:,,,,,,,
+,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Vendor Link,Datasheet
+1,6,"C1, C2,C16, C17, C30, C32",1 uF,Device:C_Small,Capacitor_SMD:C_1206_3216Metric,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B105KBHNFNE/3888749,~
+2,10,"C3, C8, C18, C19, C20, C21, C22, C27, C29,C34",0.1 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B104KBCNNNC/3886675,~
+3,2,"C4, C5",1200 uF,Device:CP,Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn,https://www.digikey.com/en/products/detail/rubycon/100MXG1200MEFCSN25X25/3565205,https://www.mouser.com/ProductDetail/Nichicon/LLS2A122MELA?qs=CTiUoleKpMElkeBijh%2FajQ%3D%3D
+4,5,"C6, C7, C9, C10, C11",4.7 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B475KAHNNNE/3886713,~
+5,2,"C12, C13",560 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,https://www.digikey.com/en/products/detail/rubycon/10AX560MEFC8X9/4842240,~
+6,2,"C14, C15",220 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,https://www.digikey.com/en/products/detail/nichicon/UVR1E221MPD1TD/3438478,~
+8,2,"C23, C24",1000 pF,Device:C,Capacitor_SMD:C_1206_3216Metric,https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/885012208075/5453970,~
+9,1,C25,1000 uF,Device:CP,Capacitor_THT:CP_Radial_D30.0mm_P10.00mm_SnapIn,https://www.digikey.com/en/products/detail/nichicon/LGU2C102MELB/1004303,https://www.mouser.com/ProductDetail/Cornell-Dubilier-CDE/SLPX102M100A3P3?qs=5mhQgkvyHZCZ2uZBF7Bs%2FA%3D%3D
+10,3,"C26, C28, C35",10 uF,Device:C,Capacitor_SMD:C_1206_3216Metric,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31A106KAHNNNE/3886733,~
+11,1,C31,1 uF,Device:CP,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,https://www.digikey.com/en/products/detail/illinois-capacitor/105CKR050M/5410527,https://www.mouser.com/ProductDetail/United-Chemi-Con/ELE-101ELL1R0ME11D?qs=sGAEpiMZZMsh%252B1woXyUXj4%252Bf9ki7jDby49t5xL6J1co%3D
+12,1,C33,22 nF,Device:C,Capacitor_SMD:C_1206_3216Metric,https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/885012208027/5453949,~
+14,1,C36,10 uF,Device:CP,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,https://www.digikey.com/en/products/detail/panasonic-electronic-components/ECE-A1HKS100I/6109487,https://www.mouser.com/ProductDetail/United-Chemi-Con/ELE-101ELL100MF11D?qs=sGAEpiMZZMsh%252B1woXyUXj4%252Bf9ki7jDbylQfEaT1r8GY%3D
+15,2,"D1, D2",MUHA110T3G,Device:D,Diode_SMD:D_SMA,https://www.digikey.com/en/products/detail/on-semiconductor/mura110t3g/919928,https://www.digikey.com/en/products/detail/on-semiconductor/mura110t3g/919928
+16,2,"D3, D4",B1100-13,Device:D_Schottky,Diode_SMD:D_SMA,https://www.digikey.com/en/products/detail/diodes-incorporated/B1100-13-F/717808,https://www.digikey.com/en/products/detail/diodes-incorporated/b1100q-13-f/6110468
+17,1,D5,D_Zener,Device:D_Zener,Diode_SMD:D_SMA,https://www.digikey.com/en/products/detail/micro-commercial-co/SMAJ4744A-TP/950471,https://www.mccsemi.com/pdf/Products/SMBJ5338B-SMBJ5388B(SMB).pdf
+18,1,D6,B1100B,Device:D_Schottky,Diode_SMD:D_SMB,https://www.digikey.com/en/products/detail/diodes-incorporated/B1100B-13-F/768766,https://www.digikey.com/en/products/detail/diodes-incorporated/B1100B-13-F/768766
+19,2,"FB1, FB2",74279201,Device:Ferrite_Bead_Small,Inductor_SMD:L_0805_2012Metric,https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/74279201/1639003,https://www.mouser.com/datasheet/2/445/74279201-1720615.pdf
+20,1,J1,OSTT7020150,Connector:Screw_Terminal_01x06,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTVN06A150/1588866?s=N4IgjCBcoBwJxVAYygMwIYBsDOBTANCAPZQDaIcA7AEwBsIAuoQA4AuUIAyqwE4CWAOwDmIAL6EwABkoBWRCBSQMOAsTIhqAFioBmSYxbtIXXoJHiNYGXOgK0WPIRKRytAAQBBAyDYcAqgJ8rADyqACyuOjYAK48uGKEALQQtorKjmouIDLU3r7GYqKiQA,https://www.mouser.com/ProductDetail/Phoenix-Contact/1725698?qs=sGAEpiMZZMvPvGwLNS67143eXz6yLKIOycfUSa3x6pY%3D
+21,2,"J2, J3",Conn_01x06,Connector_Generic:Conn_01x06,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,https://www.digikey.com/en/products/detail/amphenol-icc-fci/68000-406HLF/1878471,~
+22,1,J4,Conn_01x03,Connector_Generic:Conn_01x03,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,https://www.digikey.com/en/products/detail/amphenol-icc-fci/68000-406HLF/1878471,~
+23,1,J5,OSTT7020150,Connector:Screw_Terminal_01x02,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTT7020150/740272?s=N4IgTCBcDaIPIGUAqSDsAGM6CMBWdIAugL5A,https://www.mouser.com/ProductDetail/Phoenix-Contact/1725656?qs=sGAEpiMZZMvPvGwLNS67143eXz6yLKIOCsITGMn0Nro%3D
+24,2,"L1, L2",7443642200,Device:L,MWD_Footprints:7443642200 _Inductor,https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/7443642200/4865753?s=N4IgTCBcDaIOwBYEGYBsCxgAxZAXQF8g,https://www.mouser.com/datasheet/2/445/7443642200-1721886.pdf
+25,1,L3,220 uH,Device:L,Inductor_SMD:L_Bourns_SRR1260,https://www.digikey.com/en/products/detail/bourns-inc/SRR1260A-221K/4340226,https://www.mouser.com/ProductDetail/Bourns/SRR1260-221K?qs=sGAEpiMZZMv126LJFLh8y2g1MQW3KQGurY%2FzTCT0qxM%3D
+26,2,"Q1, Q6",CSD18540Q5B,Transistor_FET:CSD18540Q5B,Package_TO_SOT_SMD:TDSON-8-1,https://www.digikey.com/en/products/detail/texas-instruments/CSD18540Q5B/5181315,http://www.ti.com/lit/gpn/csd18540q5b
+27,4,"Q2, Q3, Q4, Q5",CSD19531Q5A,Transistor_FET:CSD19531Q5A,Package_TO_SOT_SMD:TDSON-8-1,https://www.digikey.com/en/products/detail/texas-instruments/CSD19531Q5A/4437460,http://www.ti.com/lit/gpn/csd19531q5a
+28,5,"R1, R7, R8, R9, R10",205,Device:R_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/vishay-dale/CRCW1206205RFKEA/1176563,~
+29,4,"R2, R11, R23,R30",1k,Device:R_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-8GEYJ102V/10364,~
+30,1,R3,0.002,Device:R_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/rohm-semiconductor/PMR18EZPFV2L00/2094208,~
+31,1,R4,5.11,Device:R_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/vishay-dale/CRCW12065R11FKEA/1961846,~
+32,1,R5,698k,Device:R_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-8ENF6983V/89543,~
+33,1,R6,50k,Device:R_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/yageo/RT1206BRD0750KL/5936960,~
+34,4,"R12, R13, R15, R16",2.21,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/vishay-dale/CRCW12062R21FKEA/1961802,~
+35,2,"R14, R17",4.42,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/vishay-dale/CRCW12064R42FKEA/1961838,~
+36,1,R18,806k,Device:R_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-8ENF8063V/89559,~
+37,1,R19,200k,Device:R_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/bourns-inc/CR1206-FX-2003ELF/2562848,~
+38,2,"R20, R21",5.6 ohm,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/vishay-dale/CRCW12065R60FKEA/1961850,~
+39,1,R22,10k,Device:R_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/vishay-dale/CRCW120610K0FKEA/1176758,~
+40,1,R24,0.002,Device:R_US,Resistor_SMD:R_2512_6332Metric,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CSNL2512FT2L00/1646112,https://www.mouser.com/ProductDetail/Yageo/PU2512FKMP50R002L?qs=sGAEpiMZZMvdGkrng054t0c0U24Fa%2Fv2NfStLNxNcuIQTzdklHgYjw%3D%3D
+41,1,R25,430k,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-8GEYJ434V/21334,~
+42,1,R26,169k,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/vishay-dale/CRCW1206169KFKEA/1176896,~
+43,2,"R27, R28",0 ohm,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-8GEY0R00V/27495,~
+44,1,R29,3k,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/vishay-dale/CRCW12063K00FKEA/1176696,~
+46,1,R31,3,Device:R_Small_US,Resistor_SMD:R_1206_3216Metric,https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H2BTTD3R00F/10235879,~
+47,1,U1,MSP432,MSP_mwd:MSP432,MWD_Footprints:MSP432,,
+48,1,U2,NCP718xSN500,Regulator_Linear:NCP718xSN500,Package_TO_SOT_SMD:SOT-23-5,https://www.digikey.com/en/products/detail/on-semiconductor/NCP718ASN500T1G/9169770,https://www.onsemi.com/pub/Collateral/NCP718-D.PDF
+49,1,U3,UCC27517DBVR,MSP_mwd:Generic_SOT23-5,Package_TO_SOT_SMD:SOT-23-5,https://www.digikey.com/en/products/detail/texas-instruments/UCC27517DBVR/3074526?s=N4IgTCBcDaIKoGEFgOwFYCMKAiAhAagEogC6AvkA,http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fucc27517
+50,2,"U4, U7",INA240A2PW,Amplifier_Current:INA240A2PW,Package_SO:TSSOP-8_4.4x3mm_P0.65mm,https://www.digikey.com/en/products/detail/texas-instruments/INA240A2PWR/6562018,http://www.ti.com/lit/ds/symlink/ina240.pdf
+51,2,"U5, U6",LM5109BMA,Driver_FET:LM5109BMA,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.digikey.com/en/products/detail/texas-instruments/LM5109BMA/3695266,http://www.ti.com/lit/ds/symlink/lm5109b.pdf
+52,1,U8,LM5009MM,Regulator_Switching:LM5009MM,Package_SO:MSOP-8_3x3mm_P0.65mm,https://www.digikey.com/en/products/detail/texas-instruments/LM5009MM/3697383,http://www.ti.com/lit/ds/symlink/lm5009.pdf
+53,1,U9,AP131-33,Regulator_Linear:AP131-33,Package_TO_SOT_SMD:SOT-23-5,https://www.mouser.com/ProductDetail/Diodes-Incorporated/AP131-33WG-7?qs=%2Fha2pyFadujFUqaC0QkiSov7dosyMiokL3ybOHsTu%252Bg%3D,http://www.diodes.com/_files/datasheets/AP131.pdf
+54,2,"U10, U11",LM321,Amplifier_Operational:LM321,Package_TO_SOT_SMD:SOT-23-5,https://www.digikey.com/en/products/detail/texas-instruments/LM321MF/3701450,http://www.ti.com/lit/ds/symlink/lm321.pdf
+,,,,,,,
+,,,,,,https://www.digikey.com/en/products/detail/amphenol-icc-fci/67997-410HLF/1878475,
+,,,,,,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPPC052LFBN-RC/810245,

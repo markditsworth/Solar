@@ -1,0 +1,27 @@
+1. Battery Charger
+	1.1 Design Ckt/PCB (Done)
+	1.2 Validate Open Loop
+	1.3 Validate Closed Loop CV
+	1.4 Validate Closed Loop MPPT
+	1.5 Integrate in situ monitoring
+	1.6 Thermal Mgmt
+	1.6 Design/build casing
+2. Battery Inverter
+	2.1 Design Ckt/PCB
+	2.2 Validate Open Loop
+	2.3 Validate Closed Loop
+	2.4 Integrate in situ monitoring
+	2.5 Thermal mgmt
+	2.6 Housing with battery
+3. Solar Panel Rig
+4. Remote Monitoring
+	4.1 Cloud-based ES cluster
+	4.2 Wifi Radio on charger
+	4.3 Wifi radio on inverter
+	4.4 Wifi radio in battery pack
+5. Battery Pack
+	5.1 Choose chemistry
+	5.2 Choose configuration
+	5.3 Design Pack Housing
+	5.4 Thermal mgmt
+	

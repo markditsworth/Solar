@@ -1,0 +1,287 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:L L?
+U 1 1 5FA2C0BB
+P 1650 1500
+F 0 "L?" V 1840 1500 50  0000 C CNN
+F 1 "L" V 1749 1500 50  0000 C CNN
+F 2 "" H 1650 1500 50  0001 C CNN
+F 3 "~" H 1650 1500 50  0001 C CNN
+	1    1650 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5FA2DECB
+P 2300 1100
+F 0 "Q?" H 2504 1146 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 2504 1055 50  0000 L CNN
+F 2 "" H 2500 1200 50  0001 C CNN
+F 3 "~" H 2300 1100 50  0001 C CNN
+	1    2300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5FA2EB0D
+P 2300 1950
+F 0 "Q?" H 2504 1996 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 2504 1905 50  0000 L CNN
+F 2 "" H 2500 2050 50  0001 C CNN
+F 3 "~" H 2300 1950 50  0001 C CNN
+	1    2300 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1500 2400 1500
+Wire Wire Line
+	2400 1500 2400 1300
+Wire Wire Line
+	2400 1750 2400 1500
+Connection ~ 2400 1500
+$Comp
+L Device:CP C?
+U 1 1 5FA309E4
+P 3300 1500
+F 0 "C?" H 3418 1546 50  0000 L CNN
+F 1 "1800u" H 3418 1455 50  0000 L CNN
+F 2 "" H 3338 1350 50  0001 C CNN
+F 3 "~" H 3300 1500 50  0001 C CNN
+	1    3300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 900  3300 900 
+Wire Wire Line
+	3300 900  3300 1350
+Wire Wire Line
+	2400 2150 3300 2150
+Wire Wire Line
+	3300 2150 3300 1650
+Text Label 2800 900  0    50   ~ 0
+DC_Link
+$Comp
+L power:GND #PWR?
+U 1 1 5FA357C8
+P 3300 2150
+F 0 "#PWR?" H 3300 1900 50  0001 C CNN
+F 1 "GND" H 3305 1977 50  0000 C CNN
+F 2 "" H 3300 2150 50  0001 C CNN
+F 3 "" H 3300 2150 50  0001 C CNN
+	1    3300 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 2150
+$Comp
+L Regulator_Controller:TL494 U?
+U 1 1 5FA37EEE
+P 2750 4050
+F 0 "U?" H 2750 4931 50  0000 C CNN
+F 1 "TL494" H 2750 4840 50  0000 C CNN
+F 2 "" H 2750 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl494.pdf" H 2750 4050 50  0001 C CNN
+	1    2750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FA3AB80
+P 2750 4650
+F 0 "#PWR?" H 2750 4400 50  0001 C CNN
+F 1 "GNDD" H 2754 4495 50  0000 C CNN
+F 2 "" H 2750 4650 50  0001 C CNN
+F 3 "" H 2750 4650 50  0001 C CNN
+	1    2750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5FA3F9D4
+P 6650 1100
+F 0 "Q?" H 6854 1146 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 6854 1055 50  0000 L CNN
+F 2 "" H 6850 1200 50  0001 C CNN
+F 3 "~" H 6650 1100 50  0001 C CNN
+	1    6650 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5FA40081
+P 8050 1100
+F 0 "Q?" H 8254 1146 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 8254 1055 50  0000 L CNN
+F 2 "" H 8250 1200 50  0001 C CNN
+F 3 "~" H 8050 1100 50  0001 C CNN
+	1    8050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5FA40F23
+P 6650 2000
+F 0 "Q?" H 6854 2046 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 6854 1955 50  0000 L CNN
+F 2 "" H 6850 2100 50  0001 C CNN
+F 3 "~" H 6650 2000 50  0001 C CNN
+	1    6650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5FA4172F
+P 8050 2000
+F 0 "Q?" H 8254 2046 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 8254 1955 50  0000 L CNN
+F 2 "" H 8250 2100 50  0001 C CNN
+F 3 "~" H 8050 2000 50  0001 C CNN
+	1    8050 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 900  8150 900 
+Wire Wire Line
+	6750 2200 8150 2200
+Wire Wire Line
+	6750 1800 6750 1300
+Wire Wire Line
+	8150 1300 8150 1800
+Text Label 6750 1500 0    50   ~ 0
+out1
+Text Label 8150 1500 0    50   ~ 0
+out2
+$Comp
+L Device:C C?
+U 1 1 5FA4983D
+P 9050 1450
+F 0 "C?" V 8798 1450 50  0000 C CNN
+F 1 "C" V 8889 1450 50  0000 C CNN
+F 2 "" H 9088 1300 50  0001 C CNN
+F 3 "~" H 9050 1450 50  0001 C CNN
+	1    9050 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5FA54ACF
+P 3700 1500
+F 0 "C?" H 3818 1546 50  0000 L CNN
+F 1 "1800u" H 3818 1455 50  0000 L CNN
+F 2 "" H 3738 1350 50  0001 C CNN
+F 3 "~" H 3700 1500 50  0001 C CNN
+	1    3700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1650 3700 2150
+Wire Wire Line
+	3700 2150 3300 2150
+Wire Wire Line
+	3700 1350 3700 900 
+Wire Wire Line
+	3700 900  3300 900 
+Connection ~ 3300 900 
+$Comp
+L Device:C_Small C?
+U 1 1 5FA56028
+P 4150 1500
+F 0 "C?" H 4242 1546 50  0000 L CNN
+F 1 "0.1u" H 4242 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4150 1500 50  0001 C CNN
+F 3 "~" H 4150 1500 50  0001 C CNN
+	1    4150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FA56563
+P 4650 1500
+F 0 "C?" H 4742 1546 50  0000 L CNN
+F 1 "0.1u" H 4742 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4650 1500 50  0001 C CNN
+F 3 "~" H 4650 1500 50  0001 C CNN
+	1    4650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FA56A22
+P 5150 1500
+F 0 "C?" H 5242 1546 50  0000 L CNN
+F 1 "0.1u" H 5242 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5150 1500 50  0001 C CNN
+F 3 "~" H 5150 1500 50  0001 C CNN
+	1    5150 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 900  4150 900 
+Wire Wire Line
+	5150 900  5150 1400
+Connection ~ 3700 900 
+Wire Wire Line
+	5150 1600 5150 2150
+Wire Wire Line
+	5150 2150 4650 2150
+Connection ~ 3700 2150
+Wire Wire Line
+	4150 1600 4150 2150
+Connection ~ 4150 2150
+Wire Wire Line
+	4150 2150 3700 2150
+Wire Wire Line
+	4650 1600 4650 2150
+Connection ~ 4650 2150
+Wire Wire Line
+	4650 2150 4150 2150
+Wire Wire Line
+	4650 1400 4650 900 
+Connection ~ 4650 900 
+Wire Wire Line
+	4650 900  5150 900 
+Wire Wire Line
+	4150 1400 4150 900 
+Connection ~ 4150 900 
+Wire Wire Line
+	4150 900  4650 900 
+$Comp
+L Device:C_Small C?
+U 1 1 5FA76849
+P 3050 3250
+F 0 "C?" V 2821 3250 50  0000 C CNN
+F 1 "0.1u" V 2912 3250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3050 3250 50  0001 C CNN
+F 3 "~" H 3050 3250 50  0001 C CNN
+	1    3050 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 3250 2750 3250
+Wire Wire Line
+	2750 3250 2750 3350
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FA78BCF
+P 3150 3250
+F 0 "#PWR?" H 3150 3000 50  0001 C CNN
+F 1 "GNDD" V 3154 3140 50  0000 R CNN
+F 2 "" H 3150 3250 50  0001 C CNN
+F 3 "" H 3150 3250 50  0001 C CNN
+	1    3150 3250
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
