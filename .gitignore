@@ -5,4 +5,4 @@ code/inverter_mppt/startup_msp432p401r_ccs.c
 code/inverter_mppt/system_msp432p401r.c
 code/inverter_mppt/targetConfigs/MSP432P401R.ccxml
 code/inverter_mppt/targetConfigs/readme.txt
-
+code/inverter_mppt/Debug/*
