@@ -2341,4 +2341,30 @@ F 3 "" H 5450 6350 50  0001 C CNN
 	1    5450 6350
 	1    0    0    -1  
 $EndComp
+Text GLabel 9550 3050 0    50   Input ~ 0
+UART_TX
+Text GLabel 9550 2950 0    50   Input ~ 0
+UART_RX
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5FCC8E20
+P 8900 5750
+F 0 "J?" H 8957 6217 50  0000 C CNN
+F 1 "USB_B_Micro" H 8957 6126 50  0000 C CNN
+F 2 "" H 9050 5700 50  0001 C CNN
+F 3 "~" H 9050 5700 50  0001 C CNN
+	1    8900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCDB6D6
+P 8900 6150
+F 0 "#PWR?" H 8900 5900 50  0001 C CNN
+F 1 "GND" V 8905 6022 50  0000 R CNN
+F 2 "" H 8900 6150 50  0001 C CNN
+F 3 "" H 8900 6150 50  0001 C CNN
+	1    8900 6150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

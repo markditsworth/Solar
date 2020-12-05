@@ -2253,7 +2253,7 @@ Text GLabel 9550 2450 0    50   Input ~ 0
 G1_H
 Text GLabel 9550 2350 0    50   Input ~ 0
 G1_L
-Text GLabel 8700 2600 0    50   Input ~ 0
+Text GLabel 10550 4750 2    50   Input ~ 0
 Input_EN
 $Comp
 L power:GND #PWR0101
@@ -2341,4 +2341,8 @@ F 3 "" H 5450 6350 50  0001 C CNN
 	1    5450 6350
 	1    0    0    -1  
 $EndComp
+Text GLabel 9550 3050 0    50   Input ~ 0
+UART_TX
+Text GLabel 9550 2950 0    50   Input ~ 0
+UART_RX
 $EndSCHEMATC
