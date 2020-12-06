@@ -56,9 +56,12 @@
  *
  *******************************************************************************/
 #define UART
+#define TIMER2_INT
 //#define UART_RX_INT
 #define PWM
-//#define ADC
+#define ADC
+//#define USE_FLOAT
+#define DEBUG
 
 
 /* DriverLib Includes */
@@ -67,6 +70,7 @@
 /* Standard Includes */
 #include <stdint.h>
 #include <stdbool.h>
+#include <string.h>
 #ifdef UART
 #include "printf.h"
 #endif
@@ -104,6 +108,17 @@ const Timer_A_ContinuousModeConfig continuousModeConfig =
 };
 #endif
 
+#ifdef ADC
+#define PANEL_V   0
+#define PANEL_I   1
+#define BATTERY_V 2
+#define BATTERY_I 3
+static uint16_t resultsBuffer[4];
+static uint16_t panelV;
+static uint16_t panelI;
+static uint16_t readCount;
+#endif
+
 int main(void)
 {
     /* Halting WDT  */
@@ -115,6 +130,12 @@ int main(void)
                                                    GPIO_PIN2 | GPIO_PIN3,
                                                    GPIO_PRIMARY_MODULE_FUNCTION); // P1.2 and P1.3 in UART
 #endif
+#ifdef ADC
+    MAP_GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P4,
+            GPIO_PIN7 | GPIO_PIN5 | GPIO_PIN4 | GPIO_PIN2,						// A6, A8, A9, A11
+			GPIO_TERTIARY_MODULE_FUNCTION);
+#endif
+
 
     /* CONFIGURE CLOCKS */
     CS_setDCOCenteredFrequency(CS_DCO_FREQUENCY_12);                            // DCO to 12MHz
@@ -128,11 +149,12 @@ int main(void)
 #endif
 
     /* CONFIGURE TIMER A2 */
-#ifdef UART
+#ifdef TIMER2_INT
     MAP_Timer_A_configureContinuousMode(TIMER_A2_BASE, &continuousModeConfig);  // configure TA2 for continuousMode (~0.5 Hz)
     MAP_Interrupt_enableInterrupt(INT_TA2_N);                                   // enable ISR for TA2 to send UART
     MAP_Timer_A_startCounter(TIMER_A2_BASE, TIMER_A_CONTINUOUS_MODE);           // Start TA2
-
+#endif
+#ifdef UART
     /* CONFIGURE UART A0 */
     MAP_UART_initModule(EUSCI_A0_BASE, &uartConfig);                            // initialize UART A0
     MAP_UART_enableModule(EUSCI_A0_BASE);                                       // enable UART A0
@@ -142,18 +164,68 @@ int main(void)
 #endif
 #endif
 
+    /* CONFIGURE ADC */
+#ifdef ADC
+    memset(resultsBuffer, 0x00, 4 * sizeof(uint16_t));
+    MAP_REF_A_setReferenceVoltage(REF_A_VREF2_5V);								// Set reference voltage to 2.5V
+    MAP_REF_A_enableReferenceVoltage();											// enable reference voltage
+    MAP_ADC14_enableModule();													// enable ADC module
+#ifdef USE_FLOAT
+    MAP_FPU_enableModule();														// Enable Floating-point processor
+#endif
+
+    MAP_ADC14_initModule(ADC_CLOCKSOURCE_SMCLK, ADC_PREDIVIDER_1, ADC_DIVIDER_4,// set clock source to SMCLK
+            0);
+    MAP_ADC14_configureMultiSequenceMode(ADC_MEM0, ADC_MEM3, true);			// Configure MEM0 - MEM3, and repeat to true
+    MAP_ADC14_configureConversionMemory(ADC_MEM0,								// Assign A6 to MEM0
+            ADC_VREFPOS_AVCC_VREFNEG_VSS,
+            ADC_INPUT_A6, false);
+    MAP_ADC14_configureConversionMemory(ADC_MEM1,								// Assign A8 to MEM1
+            ADC_VREFPOS_AVCC_VREFNEG_VSS,
+            ADC_INPUT_A8, false);
+    MAP_ADC14_configureConversionMemory(ADC_MEM2,								// Assign A9 to MEM2
+            ADC_VREFPOS_AVCC_VREFNEG_VSS,
+            ADC_INPUT_A9, false);
+    MAP_ADC14_configureConversionMemory(ADC_MEM3,								// Assign A11 to MEM3
+            ADC_VREFPOS_AVCC_VREFNEG_VSS,
+            ADC_INPUT_A11, false);
+    MAP_ADC14_enableInterrupt(ADC_INT3);										// Enable interrupt on MEM3 (last in the seq)
+    MAP_Interrupt_enableInterrupt(INT_ADC14);									// Enable ADC interrupt
+    MAP_ADC14_enableSampleTimer(ADC_AUTOMATIC_ITERATION);						// Automatically step through seq convert
+#endif
+
     /* Master Interrupt settings */
     MAP_Interrupt_enableSleepOnIsrExit();
     MAP_Interrupt_enableMaster();
     //![Simple UART Example]
 
+#ifdef ADC
+    MAP_ADC14_enableConversion();												// Enable and trigger start of the conversion
+    MAP_ADC14_toggleConversionTrigger();
+#endif
 
     while(1)
     {
+#ifndef DEBUG
+    	while(readCount<16)
+    	{
+    		uint16_t dummy_var = 0; // getting stuck here for some reason, but if I pause and restart, it gets out of the loop
+    	}
+		MAP_ADC14_disableConversion(); 				// disable ADC
+		readCount = 0; 								// set read counter back to 0
+		printf(EUSCI_A0_BASE,                           // printf to serial
+				"{\"panel_voltage\":%i,\"panel_current\":%i}\n",       // build json packet here
+				panelV, panelI);
+		MAP_ADC14_enableConversion();												// Enable and trigger start of the conversion
+		MAP_ADC14_toggleConversionTrigger();
+
+#else
         MAP_PCM_gotoLPM0();
+#endif
     }
 }
 
+/***************** ISRs ****************************/
 /* EUSCI A0 UART ISR - Echoes data back to PC host */
 #ifdef UART_RX_INT
 void EUSCIA0_IRQHandler(void)
@@ -168,15 +240,31 @@ void EUSCIA0_IRQHandler(void)
 }
 #endif
 
-#ifdef UART
+#ifdef TIMER2_INT
 void TA2_N_IRQHandler(void)
 {
     MAP_Timer_A_clearInterruptFlag(TIMER_A2_BASE);  // clear interrupt flag
-    uint16_t value1 = 12;                           // gather variables
-    uint16_t value2 = 5;
+    panelV = resultsBuffer[PANEL_V];                           // gather variables
+    panelI = resultsBuffer[PANEL_I];
     printf(EUSCI_A0_BASE,                           // printf to serial
-           "{\"value1\":%i,\"value2\":%i}\n",       // build json packet here
-           value1, value2);                         // provide values here
+           "{\"panel_voltage\":%i,\"panel_current\":%i}\n",       // build json packet here
+           panelV, panelI);                         // provide values here
 }
 #endif
+
+#ifdef ADC
+void ADC14_IRQHandler(void)
+{
+    uint64_t status;
+
+    status = MAP_ADC14_getEnabledInterruptStatus();
+    MAP_ADC14_clearInterruptFlag(status);
+
+    if(status & ADC_INT3)
+    {
+    	MAP_ADC14_getMultiSequenceResult(resultsBuffer);
+    }
+}
+#endif
+
 
